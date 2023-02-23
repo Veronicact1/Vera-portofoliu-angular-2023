@@ -1,0 +1,33 @@
+<footer class="ae-container-fluid rk-footer ">
+    <div class="ae-grid ae-grid--collapse">
+      <div class="ae-grid__item item-lg-4 au-xs-ta-center au-lg-ta-left">
+        <ul class="rk-menu rk-footer-menu">
+          <li routerLinkActive="active" class="rk-menu__item">
+            <a routerLink="home" class="rk-menu__link">Incio</a>
+          </li>
+          <li routerLinkActive="active" class="rk-menu__item">
+            <a routerLink="about" class="rk-menu__link">About</a>
+          </li>
+          <li routerLinkActive="active" class="rk-menu__item">
+            <a routerLink="terminos" class="rk-menu__link">Términos y condiciones</a>
+          </li>
+        </ul>
+        <p class="rk-footer__text rk-footer__copy "> <span class="ae-u-bold">© </span><span class="ae-u-bolder">{{year}} Web App Angular </span></p>
+      </div>
+      <div class="ae-grid__item item-lg-4 au-xs-ta-center">
+        <a [href]="_servicio.info.twitter" target="_blank" class="rk-social-btn ">
+          <svg>
+            <use xlink:href="assets/img/symbols.svg#icon-twitter"></use>
+          </svg>
+        </a>
+        <a href="https://www.linkedin.com/in/marcestevegarcia/" target="_blank" class="rk-social-btn ">
+          <svg>
+            <use xlink:href="assets/img/symbols.svg#icon-linkedin"></use>
+          </svg>
+          </a>
+      </div>
+      <div class="ae-grid__item item-lg-4 au-xs-ta-center au-lg-ta-right">
+        <p class="rk-footer__text rk-footer__contact "> <span class="ae-u-bold">Email: </span><span class="ae-u-bolder"> <a href="#0" class="rk-dark-color ">{{_servicio.info.email}}</a></span></p>
+      </div>
+    </div>
+</footer>
